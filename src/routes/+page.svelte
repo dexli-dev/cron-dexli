@@ -417,6 +417,10 @@
 			<a href="https://webhook.dexli.dev" rel="external">webhook.dexli.dev</a>
 			·
 			<a href="https://regex.dexli.dev" rel="external">regex.dexli.dev</a>
+			·
+			<a href="https://diff.dexli.dev" rel="external">diff.dexli.dev</a>
+			·
+			<a href="https://transcript.dexli.dev" rel="external">transcript.dexli.dev</a>
 		</span>
 		<span class="dim">2026 · cron · dexli.dev</span>
 	</footer>
