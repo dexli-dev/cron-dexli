@@ -1,0 +1,25 @@
+# cron.dexli.dev
+
+> A cron expression parser and preview. Paste a 5-field cron expression, read it in plain English, and see the next firing times across timezones. Includes a browsable pattern library. Free, no signup, no server round-trips — parsing happens in your browser.
+
+Part of the dexli.dev tiny-tools family: one tool per subdomain, honest copy, no accounts, no upsell.
+
+## URL state (agent-relevant)
+
+The parsed state serialises into the URL, so you can construct a pre-filled link:
+
+    https://cron.dexli.dev/?e=<urlencoded expression>&tz=<IANA timezone>
+
+Example: `https://cron.dexli.dev/?e=*%2F15+9-17+*+*+1-5&tz=Europe%2FOslo` loads `*/15 9-17 * * 1-5` (every 15 min, 9–17, weekdays) with firings shown in Europe/Oslo time.
+
+## Limits
+
+- 5-field cron syntax (minute hour day-of-month month day-of-week); no seconds field, no Quartz extensions.
+
+## Family
+
+- [dexli.dev](https://dexli.dev/): the family index ([llms.txt](https://dexli.dev/llms.txt))
+- [webhook.dexli.dev](https://webhook.dexli.dev/): temporary HTTP inbox for testing webhooks
+- [regex.dexli.dev](https://regex.dexli.dev/): live regex tester with shareable URL state
+- [diff.dexli.dev](https://diff.dexli.dev/): two-pane text/JSON diff
+- [transcript.dexli.dev](https://transcript.dexli.dev/): read LLM .jsonl logs as a conversation
